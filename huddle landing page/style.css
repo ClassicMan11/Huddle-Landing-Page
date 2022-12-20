@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: hsl(257, 40%, 49%);
+}
+#body{
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: scroll;
+    background: url('./images/bg-desktop.svg') no-repeat ;
+    background-size: contain;
+}
+#logo{
+    position: relative;
+    top: 3em;
+    left: 3.5em;
+}
+#image{
+    position: absolute;
+    bottom: 4em;
+    left: 3.5em;
+}
+#text{
+    position: absolute;
+    right: 3em;
+    top: 15em;
+    width: 44.5%;
+}
+#text h1{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins' sans-serif;
+}
+#text p{
+    font-size: 1.5em;
+    padding-top: 1em;
+    color: #fff;
+    word-break: break-all;
+    font-weight: 300;
+    font-family: 'Open Sans' sans-serif;
+}
+#text button{
+    font-size: 1em;
+    padding: 0.5em;
+    border: none;
+    margin: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 1em;
+    color: hsl(257, 40%, 49%);
+    font-weight: 300;
+    font-family: 'Open Sans' sans-serif;
+    transition: all 0.5s  ease;
+}
+#text button:hover{
+    background: hsl(300, 69%, 71%);
+    color: #fff;
+}
+#socials{
+    position: absolute;
+    bottom: 3em;
+    right: 8em;
+    justify-content: space-evenly;
+}
+#socials span a{
+    display: inline-block;
+    margin-left: 0.5em;
+    padding: 0.7em;
+    font-size: 1.3em;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all 0.5s  ease;
+}
+#socials span a:hover{
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px){
+    #body{
+        background: url('./images/bg-mobile.svg') no-repeat ;
+        background-size: contain;
+    }
+    #logo{
+        position: relative;
+        top: 1em;
+        left: 1em;
+    }
+    #logo img{
+        width: 180px;
+        height: 50px;
+    }
+    #image{
+        position: absolute;
+        bottom: 16em;
+        left: 1em;
+    }
+    #image img{
+         width: 95%;
+         height: auto;
+    }
+    #text{
+        left: 1.5em;
+        width: 90%;
+        margin-top: 17em;
+        text-align: center;
+    }
+    #text h1{
+        font-size: 2em;
+        color: #fff;
+        font-weight: 600;
+        font-family: 'Poppins' sans-serif;
+    }
+    #text p{
+        font-size: 1.15em;
+    }
+    #socials{
+        position: absolute;
+        margin-bottom: -15em;
+        bottom: 1em;
+        text-align: center;
+    }
+}
